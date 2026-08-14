@@ -105,8 +105,8 @@ function initHoursWidget() {
     const isWeekday = today >= 1 && today <= 5;
     const isSaturday = today === 6;
     const isOpen =
-      (isWeekday && hours >= 8 && hours < 18) ||
-      (isSaturday && hours >= 8 && hours < 12);
+      (isWeekday && hours >= 8 && hours < 20) ||
+      (isSaturday && hours >= 8 && hours < 13);
 
     todayLabel.textContent = isOpen
       ? `Hoje, ${dayNames[today]} — Estamos atendendo agora`
@@ -404,3 +404,4 @@ function initReviewsSlider() {
   updateSlider();
   startAutoplay();
 }
+
