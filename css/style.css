@@ -512,6 +512,58 @@ address { font-style: normal; }
   gap: 1.25rem;
 }
 
+.contact-form {
+  background: rgba(210, 204, 187, 0.06);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(210, 204, 187, 0.12);
+  padding: 2rem;
+}
+
+.contact-form__title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--color-cream);
+  margin-bottom: 0.35rem;
+}
+
+.contact-form__desc {
+  font-size: 0.8rem;
+  color: rgba(210, 204, 187, 0.55);
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 0.85rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(210, 204, 187, 0.2);
+  padding: 0.75rem 0;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--color-cream);
+  outline: none;
+  transition: border-color 0.3s var(--ease-out);
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(210, 204, 187, 0.4);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-cream);
+}
+
 /* Hours Widget */
 .hours-widget {
   background: rgba(17, 16, 19, 0.6);
